@@ -1,5 +1,4 @@
-chmod +x docker
-./gradle build
+- gradle build
 
 after_success: 
 - docker build -t pgr301
