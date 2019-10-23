@@ -1,9 +1,11 @@
 sudo: required
 language: java
 install: true
+
 services:
   - docker
 script:
+  - chmod +x gradlew
   - ./gradlew build --scan -s
 
 
