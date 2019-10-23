@@ -1,3 +1,4 @@
+chmod +x docker
 ./gradle build
 
 after_success: 
