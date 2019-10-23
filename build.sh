@@ -1,5 +1,5 @@
 before install:
-./gradlew build
+- ./gradlew build
 - docker build -t pgr301
 
 after_success: 
