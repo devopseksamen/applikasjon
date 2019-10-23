@@ -4,8 +4,7 @@ install: true
 services:
   - docker
 script:
-  - ./gradle build
-  - "./build.sh"
+  - ./gradlew build --scan -s
 
 
 
