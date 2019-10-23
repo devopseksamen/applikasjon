@@ -1,7 +1,10 @@
 sudo: required
+language: java
+install: true
 services:
   - docker
 script:
+  - ./gradle build
   - "./build.sh"
 
 
