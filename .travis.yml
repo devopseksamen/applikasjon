@@ -11,6 +11,7 @@ after_install:
 script:
   - chmod +x gradlew
   - ./gradlew build
+  - docker build . --tag pgr301 --build-arg JAR_FILE=./build/libs/
   - docker ps -a
 
 
