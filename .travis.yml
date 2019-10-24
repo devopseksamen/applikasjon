@@ -5,11 +5,12 @@ install: true
 services:
   - docker
 
+before_install:
+  - docker build -t pgr301
+
 script:
   - chmod +x gradlew
   - ./gradlew build
-  - docker build --t pgr301
-
 
 
 
