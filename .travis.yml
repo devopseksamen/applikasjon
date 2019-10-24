@@ -5,12 +5,13 @@ install: true
 services:
   - docker
 
-after_install:
+before_install:
   - docker build . --tag pgr301 --build-arg JAR_FILE=./build/libs/
 
 script:
   - chmod +x gradlew
   - ./gradlew build
+  - dockerps -a
 
 
 
