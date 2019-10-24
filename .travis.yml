@@ -12,7 +12,7 @@ script:
   - chmod +x gradlew
   - ./gradlew build
   - docker build . --tag pgr301 --build-arg JAR_FILE=./build/libs/
-  - docker run pgr301:latest
+  - docker run -p 8080:8080 pgr301:latest
   - docker ps -a
 
 
