@@ -13,10 +13,10 @@ public class Application {
 	{
 		SpringApplication.run(Application.class, args);
 		System.out.println("hello world");
-		/*Logger logger = LoggerFactory.getLogger(Application.class);
+		Logger logger = LoggerFactory.getLogger(Application.class);
 
 		logger.info("Testing logz.io!");
-		logger.warn("Winter is coming");*/
+		logger.warn("Winter is coming");
 
 	}
 }
