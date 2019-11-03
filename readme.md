@@ -33,7 +33,7 @@ Get request to /devices will return all devices.
 
 Post request with a raw body to /devices/{deviceId}/measurements will create a new measurement.
 
-![Create measurement](pictures/create.measurement.jpg?raw=true)
+![Create measurement](pictures/create.measurement.JPG?raw=true)
 
 Get request to /devices/{deviceId}/measurements with parameter key geigerId and value returns all measurements of that device.
 ![get measurements by device id](pictures/get.measurement.by.device.id.jpg?raw=true)
