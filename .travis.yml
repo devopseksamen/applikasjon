@@ -6,7 +6,6 @@ services:
 script:
 - chmod +x gradlew
 - "./gradlew build"
-- Dspring.profiles.active=prod
 - echo "$DOCKER_PASSWORD" | docker login -u "$DOCKER_USERNAME" --password-stdin
 - docker build . --tag pgr301 --build-arg JAR_FILE=./build/libs/pgr301-0.0.1-SNAPSHOT.jar
 - docker run -p 8080:8080 pgr301:latest

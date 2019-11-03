@@ -10,7 +10,7 @@ import java.util.List;
 public class Api {
 
     @RestController
-    @Timed
+    //@Timed
     public static class Controller {
 
        /* @Autowired
