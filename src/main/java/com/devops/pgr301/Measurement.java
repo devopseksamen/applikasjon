@@ -3,7 +3,6 @@ package com.devops.pgr301;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.Id;
-import javax.persistence.Table;
 
 @Entity
 public class Measurement {

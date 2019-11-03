@@ -4,5 +4,5 @@ before_install:
 chmod +x gradlew
 
 after_install:
-./gradlew build
+./gradle w build
 docker build -t pgr301
