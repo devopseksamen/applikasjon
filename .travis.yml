@@ -5,8 +5,8 @@ services:
 - docker
 script:
 - chmod +x gradlew
-- SPRING_PROFILES_ACTIVE=prod ./gradlew build
-- ./gradlew bootRun
+- ./gradlew build
+- SPRING_PROFILES_ACTIVE=prod ./gradlew bootRun
 - echo "$DOCKER_PASSWORD" | docker login -u "$DOCKER_USERNAME" --password-stdin
 - docker build . --tag pgr301 --build-arg JAR_FILE=./build/libs/pgr301-0.0.1-SNAPSHOT.jar
 - docker ps -a
