@@ -1,7 +1,7 @@
 package com.devops.pgr301;
 
-//import io.micrometer.core.annotation.Timed;
-//import io.micrometer.core.instrument.MeterRegistry;
+import io.micrometer.core.annotation.Timed;
+import io.micrometer.core.instrument.MeterRegistry;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 import java.util.List;
@@ -10,12 +10,12 @@ import java.util.List;
 public class Api {
 
     @RestController
-    //@Timed
+    @Timed
     public static class Controller {
 
-       /* @Autowired
+        @Autowired
         MeterRegistry meterRegistry;
-*/
+
         @Autowired
         MeasurementService measurementService;
 
@@ -39,7 +39,7 @@ public class Api {
 
         @GetMapping("/devices")
         public List<GeigerCounter> getDevices() {
-           // meterRegistry.counter("created_devices").increment();
+            meterRegistry.counter("created_devices").increment();
             return geigerCounterService.getGeigerCounters();
         }
     }
