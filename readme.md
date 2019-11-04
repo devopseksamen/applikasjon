@@ -7,8 +7,8 @@ https://github.com/devopseksamen/infrastructure
 To run on local
 
 ~~~~
-export DOCKER_USERNAME=[secure]
-export DOCKER_PASSWORD=[secure]
+export DOCKER_USERNAME="docker username"
+export DOCKER_PASSWORD="docker password"
 export LOGZ_TOKEN="your logz token"
 ~~~~
 To build with travis
