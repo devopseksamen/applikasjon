@@ -39,7 +39,7 @@ public class Api {
 
         @GetMapping("/devices")
         public List<GeigerCounter> getDevices() {
-            meterRegistry.counter("created_devices").increment();
+            meterRegistry.counter("devices_created").increment();
             return geigerCounterService.getGeigerCounters();
         }
     }

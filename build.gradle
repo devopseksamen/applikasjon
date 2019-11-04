@@ -15,6 +15,7 @@ repositories {
 dependencies {
 	compile('org.springframework.boot:spring-boot-starter-actuator')
 	compile('io.micrometer:micrometer-registry-influx:latest.release')
+	compile group: 'io.logz.logback', name: 'logzio-logback-appender', version: '1.0.2'
 	implementation 'org.springframework.boot:spring-boot-starter'
 	implementation 'org.springframework.boot:spring-boot-starter-data-jpa'
 	implementation 'org.springframework.boot:spring-boot-starter-web'

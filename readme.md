@@ -3,8 +3,9 @@ To run on local
 ~~~~
 export DOCKER_USERNAME=[secure]
 export DOCKER_PASSWORD=[secure]
+export LOGZ_TOKEN="your logz token"
 ~~~~
-To run with travis 
+To build with travis
 
 ~~~~
 travis encrypt DOCKER_USERNAME=[secure] --add env.global
@@ -13,6 +14,8 @@ travis encrypt DOCKER_PASSWORD=[secure] --add env.global
 commit and push to git.
 
 Everytime you push to your github repo a new docker image will be pushed to your dockerhub.
+
+If everything is built successfully travis will also deploy the application to ci stage in heroku.
 
 ----
 To test the API first run the application.
@@ -37,6 +40,12 @@ Post request with a raw body to /devices/{deviceId}/measurements will create a n
 
 Get request to /devices/{deviceId}/measurements with parameter key geigerId and value returns all measurements of that device.
 ![get measurements by device id](pictures/get.measurement.by.device.id.JPG?raw=true)
+
+----
+
+If Logz_token variable is set and the logzioUrl in the logback.xml is correctly set according to your logz.io account, the application will send logs to logz.io
+
+![Logzio](pictures/logzio.JPG?raw=true)
 
 
 
