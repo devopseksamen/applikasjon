@@ -13,7 +13,7 @@ public class GeigerCounterService {
     GeigerCounterRepository geigerCounterRepository;
 
     public List<GeigerCounter> getGeigerCounters() {
-        List<GeigerCounter> geigerCounters = new ArrayList<GeigerCounter>();
+        List<GeigerCounter> geigerCounters = new ArrayList<>();
         geigerCounterRepository.findAll().forEach(geigerCounters::add);
         return geigerCounters;
     }
