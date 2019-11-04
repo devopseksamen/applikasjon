@@ -13,9 +13,9 @@ public class Measurement {
 
 
     private int geigerCounterId;
-    private int lat;
-    private int lng;
-    private int sievert;
+    private float lat;
+    private float lng;
+    private float sievert;
 
 
     public  Measurement(){
@@ -30,7 +30,7 @@ public class Measurement {
     }
 
 
-    public double getLat() {
+    public float getLat() {
         return lat;
     }
 
@@ -50,23 +50,23 @@ public class Measurement {
         this.geigerCounterId = geigerCounterId;
     }
 
-    public void setLat(int lat) {
+    public void setLat(float lat) {
         this.lat = lat;
     }
 
-    public double getLng() {
+    public float getLng() {
         return lng;
     }
 
-    public void setLng(int lng) {
+    public void setLng(float lng) {
         this.lng = lng;
     }
 
-    public int getSievert() {
+    public float getSievert() {
         return sievert;
     }
 
-    public void setSievert(int sievert) {
+    public void setSievert(float sievert) {
         this.sievert = sievert;
     }
 
