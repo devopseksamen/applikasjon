@@ -1,7 +1,7 @@
 This is the application repository for devops exam 2019. Link to the infrastructure repository
 
 ~~~~
-https://github.com/devopseksamen/infrastructure
+https://github.com/thatra94/infrastructure
 ~~~~
 
 To run on local
